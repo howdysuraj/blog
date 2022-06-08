@@ -1,0 +1,28 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eleventy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx gulp && concurrently \"npx gulp watch\" \"npx eleventy --serve\"",
+    "production": "NODE_ENV=production npx gulp && NODE_ENV=production npx eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.1",
+    "@11ty/eleventy-cache-assets": "^2.3.0",
+    "@11ty/eleventy-plugin-rss": "^1.1.2",
+    "concurrently": "^7.2.1",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-sass": "^4.1.0",
+    "moment": "^2.29.3",
+    "node-gyp": "^9.0.0",
+    "node-sass": "^7.0.1",
+    "saas": "^1.0.0",
+    "sass": "^1.52.2"
+  }
+}
